@@ -1,7 +1,6 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/Gebruiker/Desktop/School/Coderclass/Unity/Unity-VR/VR-Lego/VR
-      Lego/Packages/manifest.json
+    m_FilePath: C:/Users/Gebruiker/Desktop/School/Coderclass/Unity/Unity-VR/VR Lego/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
@@ -9,8 +8,7 @@ m_ProjectFiles:
       ticks: 637806030896863921
     m_Hash: 2134153973
   m_LockFileStatus:
-    m_FilePath: C:/Users/Gebruiker/Desktop/School/Coderclass/Unity/Unity-VR/VR-Lego/VR
-      Lego/Packages/packages-lock.json
+    m_FilePath: C:/Users/Gebruiker/Desktop/School/Coderclass/Unity/Unity-VR/VR Lego/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
@@ -27,7 +25,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.2d.sprite@1.0.0
       assetPath: Packages/com.unity.2d.sprite
       name: com.unity.2d.sprite
@@ -79,7 +77,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.2d.tilemap@1.0.0
       assetPath: Packages/com.unity.2d.tilemap
       name: com.unity.2d.tilemap
@@ -130,7 +128,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.7.5
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.ads@3.7.5
       assetPath: Packages/com.unity.ads
       name: com.unity.ads
@@ -190,6 +188,7 @@ m_PackageAssets:
         - 3.7.5
         - 4.0.0
         - 4.0.1
+        - 4.1.0
         compatible:
         - 0.0.3
         - 0.0.4
@@ -234,6 +233,7 @@ m_PackageAssets:
         - 3.7.5
         - 4.0.0
         - 4.0.1
+        - 4.1.0
         verified: 3.7.5
       dependencies:
       - name: com.unity.ugui
@@ -273,7 +273,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.6.12
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.analytics@3.6.12
       assetPath: Packages/com.unity.analytics
       name: com.unity.analytics
@@ -406,7 +406,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.15.7
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.collab-proxy@1.15.7
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
@@ -544,7 +544,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
@@ -590,6 +590,7 @@ m_PackageAssets:
         - 3.0.9
         - 3.0.10
         - 3.0.12
+        - 3.0.13
         compatible:
         - 1.0.2
         - 1.0.6
@@ -619,6 +620,7 @@ m_PackageAssets:
         - 3.0.9
         - 3.0.10
         - 3.0.12
+        - 3.0.13
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -658,7 +660,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.14
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.ide.visualstudio@2.0.14
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
@@ -693,6 +695,7 @@ m_PackageAssets:
         - 2.0.11
         - 2.0.12
         - 2.0.14
+        - 2.0.15
         compatible:
         - 1.0.2
         - 1.0.3
@@ -711,7 +714,8 @@ m_PackageAssets:
         - 2.0.11
         - 2.0.12
         - 2.0.14
-        verified: 2.0.14
+        - 2.0.15
+        verified: 2.0.15
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.9
@@ -750,7 +754,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.4
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.ide.vscode@1.2.4
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
@@ -824,7 +828,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.1.2
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.purchasing@4.1.2
       assetPath: Packages/com.unity.purchasing
       name: com.unity.purchasing
@@ -1004,7 +1008,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.29
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.test-framework@1.1.29
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
@@ -1104,7 +1108,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.6
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.textmeshpro@3.0.6
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
@@ -1271,7 +1275,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.8
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.timeline@1.4.8
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
@@ -1438,7 +1442,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.ugui@1.0.0
       assetPath: Packages/com.unity.ugui
       name: com.unity.ugui
@@ -1497,14 +1501,14 @@ m_PackageAssets:
         url: 
         revision: 
         path: 
-    - packageId: com.valvesoftware.unity.openvr@file:C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+    - packageId: com.valvesoftware.unity.openvr@file:C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Assets\SteamVR\OpenVRUnityXRPackage\Editor\com.valvesoftware.unity.openvr-1.1.4.tgz
       testable: 0
       isDirectDependency: 1
       version: 1.1.4
       source: 6
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
-        Lego\Library\PackageCache\com.valvesoftware.unity.openvr@03af4cf498c1-1614121125000
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
+        Lego\Library\PackageCache\com.valvesoftware.unity.openvr@9d038d74e5b2-1614121125000
       assetPath: Packages/com.valvesoftware.unity.openvr
       name: com.valvesoftware.unity.openvr
       displayName: OpenVR XR Plugin
@@ -1589,7 +1593,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.ai@1.0.0
       assetPath: Packages/com.unity.modules.ai
       name: com.unity.modules.ai
@@ -1638,7 +1642,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.androidjni@1.0.0
       assetPath: Packages/com.unity.modules.androidjni
       name: com.unity.modules.androidjni
@@ -1687,7 +1691,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.animation@1.0.0
       assetPath: Packages/com.unity.modules.animation
       name: com.unity.modules.animation
@@ -1736,7 +1740,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
       assetPath: Packages/com.unity.modules.assetbundle
       name: com.unity.modules.assetbundle
@@ -1785,7 +1789,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.audio@1.0.0
       assetPath: Packages/com.unity.modules.audio
       name: com.unity.modules.audio
@@ -1834,7 +1838,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.cloth@1.0.0
       assetPath: Packages/com.unity.modules.cloth
       name: com.unity.modules.cloth
@@ -1887,7 +1891,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.director@1.0.0
       assetPath: Packages/com.unity.modules.director
       name: com.unity.modules.director
@@ -1944,7 +1948,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
       assetPath: Packages/com.unity.modules.imageconversion
       name: com.unity.modules.imageconversion
@@ -1994,7 +1998,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.imgui@1.0.0
       assetPath: Packages/com.unity.modules.imgui
       name: com.unity.modules.imgui
@@ -2043,7 +2047,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
       assetPath: Packages/com.unity.modules.jsonserialize
       name: com.unity.modules.jsonserialize
@@ -2092,7 +2096,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
       assetPath: Packages/com.unity.modules.particlesystem
       name: com.unity.modules.particlesystem
@@ -2141,7 +2145,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.physics@1.0.0
       assetPath: Packages/com.unity.modules.physics
       name: com.unity.modules.physics
@@ -2190,7 +2194,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.physics2d@1.0.0
       assetPath: Packages/com.unity.modules.physics2d
       name: com.unity.modules.physics2d
@@ -2239,7 +2243,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.screencapture@1.0.0
       assetPath: Packages/com.unity.modules.screencapture
       name: com.unity.modules.screencapture
@@ -2292,7 +2296,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.terrain@1.0.0
       assetPath: Packages/com.unity.modules.terrain
       name: com.unity.modules.terrain
@@ -2341,7 +2345,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
       assetPath: Packages/com.unity.modules.terrainphysics
       name: com.unity.modules.terrainphysics
@@ -2398,7 +2402,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.tilemap@1.0.0
       assetPath: Packages/com.unity.modules.tilemap
       name: com.unity.modules.tilemap
@@ -2451,7 +2455,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.ui@1.0.0
       assetPath: Packages/com.unity.modules.ui
       name: com.unity.modules.ui
@@ -2500,7 +2504,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.uielements@1.0.0
       assetPath: Packages/com.unity.modules.uielements
       name: com.unity.modules.uielements
@@ -2565,7 +2569,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.umbra@1.0.0
       assetPath: Packages/com.unity.modules.umbra
       name: com.unity.modules.umbra
@@ -2614,7 +2618,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
       assetPath: Packages/com.unity.modules.unityanalytics
       name: com.unity.modules.unityanalytics
@@ -2671,7 +2675,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequest
       name: com.unity.modules.unitywebrequest
@@ -2720,7 +2724,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
       name: com.unity.modules.unitywebrequestassetbundle
@@ -2777,7 +2781,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestaudio
       name: com.unity.modules.unitywebrequestaudio
@@ -2834,7 +2838,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequesttexture
       name: com.unity.modules.unitywebrequesttexture
@@ -2891,7 +2895,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestwww
       name: com.unity.modules.unitywebrequestwww
@@ -2964,7 +2968,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.vehicles@1.0.0
       assetPath: Packages/com.unity.modules.vehicles
       name: com.unity.modules.vehicles
@@ -3017,7 +3021,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.video@1.0.0
       assetPath: Packages/com.unity.modules.video
       name: com.unity.modules.video
@@ -3078,7 +3082,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.vr@1.0.0
       assetPath: Packages/com.unity.modules.vr
       name: com.unity.modules.vr
@@ -3141,7 +3145,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.wind@1.0.0
       assetPath: Packages/com.unity.modules.wind
       name: com.unity.modules.wind
@@ -3190,7 +3194,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.xr@1.0.0
       assetPath: Packages/com.unity.modules.xr
       name: com.unity.modules.xr
@@ -3251,7 +3255,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.subsystems@1.0.0
       assetPath: Packages/com.unity.modules.subsystems
       name: com.unity.modules.subsystems
@@ -3304,7 +3308,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
       assetPath: Packages/com.unity.modules.uielementsnative
       name: com.unity.modules.uielementsnative
@@ -3364,7 +3368,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.0.1
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.xr.management@4.0.1
       assetPath: Packages/com.unity.xr.management
       name: com.unity.xr.management
@@ -3502,7 +3506,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 2.1.8
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.1.8
       assetPath: Packages/com.unity.xr.legacyinputhelpers
       name: com.unity.xr.legacyinputhelpers
@@ -3596,7 +3600,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
@@ -3660,7 +3664,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.1
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.services.core@1.0.1
       assetPath: Packages/com.unity.services.core
       name: com.unity.services.core
@@ -3728,7 +3732,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 2.0.0
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0
       assetPath: Packages/com.unity.nuget.newtonsoft-json
       name: com.unity.nuget.newtonsoft-json
@@ -3805,7 +3809,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+      resolvedPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Library\PackageCache\com.unity.subsystemregistration@1.0.6
       assetPath: Packages/com.unity.subsystemregistration
       name: com.unity.subsystemregistration
@@ -3856,7 +3860,7 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus:
-    - m_FilePath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+    - m_FilePath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Assets\SteamVR\OpenVRUnityXRPackage\Editor\com.valvesoftware.unity.openvr-1.1.4.tgz/package.json
       m_PathExists: 0
       m_ContentTrackingEnabled: 1
@@ -3864,7 +3868,7 @@ m_PackageAssets:
         serializedVersion: 2
         ticks: 0
       m_Hash: 0
-    - m_FilePath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
+    - m_FilePath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR
         Lego\Assets\SteamVR\OpenVRUnityXRPackage\Editor\com.valvesoftware.unity.openvr-1.1.4.tgz
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
@@ -3872,6 +3876,5 @@ m_PackageAssets:
         serializedVersion: 2
         ticks: 637497179250000000
       m_Hash: 2919789393
-m_ProjectPath: C:/Users/Gebruiker/Desktop/School/Coderclass/Unity/Unity-VR/VR-Lego/VR
-  Lego/Packages
+m_ProjectPath: C:/Users/Gebruiker/Desktop/School/Coderclass/Unity/Unity-VR/VR Lego/Packages
 m_EditorVersion: 2020.3.28f1 (f5400f52e03f)
