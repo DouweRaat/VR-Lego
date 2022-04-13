@@ -53,7 +53,8 @@
     <UnityVersion>2020.3.28f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\AntiStudAttachable.cs" />
+    <Compile Include="Assets\Scripts\Snap.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

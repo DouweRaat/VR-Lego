@@ -87,11 +87,11 @@ namespace Valve.VR.InteractionSystem
             }
         }
 
-
         public bool isDestroying { get; protected set; }
         public bool isHovering { get; protected set; }
         public bool wasHovering { get; protected set; }
 
+        public bool isAttachedToHand = false;
 
         private void Awake()
         {
@@ -287,6 +287,14 @@ namespace Valve.VR.InteractionSystem
 
                 if (isHovering == false && highlightHolder != null)
                     Destroy(highlightHolder);
+            }
+
+            if (attachedToHand != null)
+            {
+                isAttachedToHand = true;
+            }
+            else {
+                isAttachedToHand = false;
             }
         }
 
