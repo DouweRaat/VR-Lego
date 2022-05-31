@@ -26,7 +26,7 @@ public class PlaceBrick : MonoBehaviour
     void Start()
     {
         SetNextBrick();
-    }
+}
 
     void Update()
     {
@@ -61,60 +61,64 @@ public class PlaceBrick : MonoBehaviour
             }
         }
 
-
         if (CurrentBrick != null)
         {
             //snap to grid
-            var position = LegoLogic.SnapToGrid(CurrentBrick.transform.position);
-            //var position = (LegoLogic.SnapToGrid(controller.transform.position));
-            //try to find a collision free position
-            var placeposition = position;
-            PositionOk = false;
+            //if (Physics.Raycast(controller.transform.position, controller.transform.forward, out var hitinfo, float.MaxValue, LegoLogic.LayerMaksLego))
+            if (Physics.Raycast(VRCamera.transform.position, controller.transform.position, out var hitinfo, float.MaxValue, LegoLogic.LayerMaksLego))
+            {
+                var position = LegoLogic.SnapToGrid(hitinfo.point);
+                //var position = LegoLogic.SnapToGrid(CurrentBrick.transform.position);
+                //var position = (LegoLogic.SnapToGrid(controller.transform.position));
+                var placeposition = position;
+                PositionOk = false;
 
-            if (Input.GetKeyDown(KeyCode.I))
-            {
-                placeposition.x += LegoLogic.Grid.x;
-            }
-            if (Input.GetKeyDown(KeyCode.K))
-            {
-                placeposition.x -= LegoLogic.Grid.x;
-            }
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                placeposition.z += LegoLogic.Grid.z;
-            }
-            if (Input.GetKeyDown(KeyCode.J))
-            {
-                placeposition.z -= LegoLogic.Grid.z;
-            }
-            if (Input.GetKeyDown(KeyCode.N)) {
-                placeposition.y -= LegoLogic.Grid.y;
-            }
-
-            for (int i = 0; i < 100; i++)
-            {
-                var collider = Physics.OverlapBox(placeposition + CurrentBrick.transform.rotation * CurrentBrick.Collider.center, CurrentBrick.Collider.size / 2, CurrentBrick.transform.rotation, LegoLogic.LayerMaksLego);
-                PositionOk = collider.Length == 0;
-                if (!PositionOk)
-                    break;
-                else
-                    placeposition.y -= LegoLogic.Grid.y;
-            }
-            for (int i = 0; i < 100; i++)
-            {
-                var collider = Physics.OverlapBox(placeposition + CurrentBrick.transform.rotation * CurrentBrick.Collider.center, CurrentBrick.Collider.size / 2, CurrentBrick.transform.rotation, LegoLogic.LayerMaksLego);
-                PositionOk = collider.Length == 0;
-                if (PositionOk)
-                    break;
-                else
+                if (Input.GetKeyDown(KeyCode.I))
                 {
-                    placeposition.y += LegoLogic.Grid.y;
+                    placeposition.x += LegoLogic.Grid.x;
                 }
+                if (Input.GetKeyDown(KeyCode.K))
+                {
+                    placeposition.x -= LegoLogic.Grid.x;
+                }
+                if (Input.GetKeyDown(KeyCode.L))
+                {
+                    placeposition.z += LegoLogic.Grid.z;
+                }
+                if (Input.GetKeyDown(KeyCode.J))
+                {
+                    placeposition.z -= LegoLogic.Grid.z;
+                }
+                if (Input.GetKeyDown(KeyCode.N))
+                {
+                    placeposition.y -= LegoLogic.Grid.y;
+                }
+
+                //for (int i = 0; i < 100; i++)
+                //{
+                //    var collider = Physics.OverlapBox(placeposition + CurrentBrick.transform.rotation * CurrentBrick.Collider.center, CurrentBrick.Collider.size / 2, CurrentBrick.transform.rotation, LegoLogic.LayerMaksLego);
+                //    PositionOk = collider.Length == 0;
+                //    if (!PositionOk)
+                //        break;
+                //    else
+                //        placeposition.y -= LegoLogic.Grid.y;
+                //}
+                //for (int i = 0; i < 100; i++)
+                //{
+                //    var collider = Physics.OverlapBox(placeposition + CurrentBrick.transform.rotation * CurrentBrick.Collider.center, CurrentBrick.Collider.size / 2, CurrentBrick.transform.rotation, LegoLogic.LayerMaksLego);
+                //    PositionOk = collider.Length == 0;
+                //    if (PositionOk)
+                //        break;
+                //    else
+                //    {
+                //        placeposition.y += LegoLogic.Grid.y;
+                //    }
+                //}
+                if (PositionOk)
+                    CurrentBrick.transform.position = placeposition;
+                else
+                    CurrentBrick.transform.position = position;
             }
-            if (PositionOk)
-                CurrentBrick.transform.position = placeposition;
-            else
-                CurrentBrick.transform.position = position;
             //if (Physics.Raycast(VRCamera.transform.position, VRCamera.transform.forward, out var hitinfo, float.MaxValue, LegoLogic.LayerMaksLego))
             //{
             //    //snap to grid
@@ -151,13 +155,9 @@ public class PlaceBrick : MonoBehaviour
                 CurrentBrick.transform.position = pos;
             }
 
-            if (Input.GetKeyDown(KeyCode.P) || rotateBrick.GetStateDown(SteamVR_Input_Sources.RightHand))
+            if (Input.GetKeyDown(KeyCode.P) || rotateBrick.GetStateDown(SteamVR_Input_Sources.Any))
             {
                 CurrentBrick.transform.Rotate(Vector3.up, 90);
-            }
-            if (Input.GetKeyDown(KeyCode.O) || rotateBrick.GetStateDown(SteamVR_Input_Sources.LeftHand))
-            {
-                CurrentBrick.transform.Rotate(Vector3.up, -90);
             }
         }
     }
