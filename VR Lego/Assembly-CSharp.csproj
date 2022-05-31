@@ -53,8 +53,12 @@
     <UnityVersion>2020.3.28f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\LegoLogic.cs" />
     <Compile Include="Assets\Scripts\AntiStudAttachable.cs" />
+    <Compile Include="Assets\Scripts\Brick.cs" />
+    <Compile Include="Assets\Scripts\PlaceBrick.cs" />
     <Compile Include="Assets\Scripts\Snap.cs" />
+    <Compile Include="Assets\Scripts\FollowHand.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -755,6 +759,10 @@
     <ProjectReference Include="SteamVR_Editor.csproj">
       <Project>{F7025773-22E7-F8BB-9D19-3675B21B1203}</Project>
       <Name>SteamVR_Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{C09A0F3A-65B7-943B-6C2F-5F6978B18D8F}</Project>
+      <Name>SteamVR_Actions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

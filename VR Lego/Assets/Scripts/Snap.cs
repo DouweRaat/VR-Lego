@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR.InteractionSystem;
 
 public class Snap : MonoBehaviour
 {
@@ -9,15 +8,6 @@ public class Snap : MonoBehaviour
     private float yDegreesChange = 0;
     private float xLengthFromStud = 0;
     private float zLengthFromStud = 0;
-    public Interactable interactable;
-
-    public void Update()
-    {
-        if (interactable.isAttachedToHand == false)
-        {
-            SnapToGrid();
-        }
-    }
 
     public void SnapToGrid()
     {

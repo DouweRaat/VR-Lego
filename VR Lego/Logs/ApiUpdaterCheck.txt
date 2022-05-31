@@ -28,91 +28,13 @@ C# parse time         : 432ms
 candidates check time : 95ms
 console write time    : 1ms
 
-[api-updater (non-obsolete-error-filter)] 13-4-2022 10:11:30 : Starting C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 28-5-2022 16:15:46 : Starting C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
 [api-updater (non-obsolete-error-filter)] 
 ----------------------------------
-jit/startup time      : 120,6781ms
-moved types parse time: 92ms
-candidates parse time : 21ms
-C# parse time         : 344ms
-candidates check time : 82ms
-console write time    : 0ms
-
-[api-updater (non-obsolete-error-filter)] 13-4-2022 10:13:53 : Starting C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
-[api-updater (non-obsolete-error-filter)] 
-----------------------------------
-jit/startup time      : 139,6259ms
-moved types parse time: 95ms
-candidates parse time : 22ms
-C# parse time         : 382ms
-candidates check time : 80ms
-console write time    : 0ms
-
-[api-updater (non-obsolete-error-filter)] 13-4-2022 10:15:54 : Starting C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
-[api-updater (non-obsolete-error-filter)] Exception caught while loading types from C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR Lego\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll (some types may not be loaded)
-	Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
-	  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
-  at System.Reflection.Assembly.GetTypes () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at APIUpdater.NonObsoleteApiUpdaterDetector.ExtraInfoParser+<LoadTypesWithMovedFromAttributeAsync>d__3.MoveNext () [0x000c8] in <68bff7873e0e4aa69a14dfc30bebbe3e>:0 
-	Could not load file or assembly 'UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
-
-[api-updater (non-obsolete-error-filter)] Exception caught while loading types from C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR Lego\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll (some types may not be loaded)
-	Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
-	  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
-  at System.Reflection.Assembly.GetTypes () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at APIUpdater.NonObsoleteApiUpdaterDetector.ExtraInfoParser+<LoadTypesWithMovedFromAttributeAsync>d__3.MoveNext () [0x000c8] in <68bff7873e0e4aa69a14dfc30bebbe3e>:0 
-	Could not load file or assembly 'UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
-
-[api-updater (non-obsolete-error-filter)] 
-----------------------------------
-jit/startup time      : 150,5192ms
-moved types parse time: 108ms
-candidates parse time : 6ms
-C# parse time         : 483ms
-candidates check time : 99ms
-console write time    : 0ms
-
-[api-updater (non-obsolete-error-filter)] 13-4-2022 10:19:14 : Starting C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
-[api-updater (non-obsolete-error-filter)] Exception caught while loading types from C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR Lego\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll (some types may not be loaded)
-	Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
-	  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
-  at System.Reflection.Assembly.GetTypes () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at APIUpdater.NonObsoleteApiUpdaterDetector.ExtraInfoParser+<LoadTypesWithMovedFromAttributeAsync>d__3.MoveNext () [0x000c8] in <68bff7873e0e4aa69a14dfc30bebbe3e>:0 
-	Could not load file or assembly 'UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
-
-[api-updater (non-obsolete-error-filter)] Exception caught while loading types from C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR Lego\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll (some types may not be loaded)
-	Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
-	  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
-  at System.Reflection.Assembly.GetTypes () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at APIUpdater.NonObsoleteApiUpdaterDetector.ExtraInfoParser+<LoadTypesWithMovedFromAttributeAsync>d__3.MoveNext () [0x000c8] in <68bff7873e0e4aa69a14dfc30bebbe3e>:0 
-	Could not load file or assembly 'UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
-
-[api-updater (non-obsolete-error-filter)] 
-----------------------------------
-jit/startup time      : 142,447ms
-moved types parse time: 108ms
-candidates parse time : 19ms
-C# parse time         : 478ms
-candidates check time : 109ms
+jit/startup time      : 2097,3752ms
+moved types parse time: 104ms
+candidates parse time : 3ms
+C# parse time         : 370ms
+candidates check time : 71ms
 console write time    : 1ms
-
-[api-updater (non-obsolete-error-filter)] 13-4-2022 11:07:25 : Starting C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
-[api-updater (non-obsolete-error-filter)] 
-----------------------------------
-jit/startup time      : 249,4511ms
-moved types parse time: 109ms
-candidates parse time : 8ms
-C# parse time         : 414ms
-candidates check time : 48ms
-console write time    : 0ms
-
-[api-updater (non-obsolete-error-filter)] 13-4-2022 11:09:15 : Starting C:/Program Files/Unity/Hub/Editor/2020.3.28f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
-[api-updater (non-obsolete-error-filter)] 
-----------------------------------
-jit/startup time      : 143,1279ms
-moved types parse time: 94ms
-candidates parse time : 6ms
-C# parse time         : 335ms
-candidates check time : 42ms
-console write time    : 0ms
 

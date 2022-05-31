@@ -50,6 +50,22 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/SwitchColor",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/SwitchPiece",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/PlaceBrick",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/RotateBrick",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
