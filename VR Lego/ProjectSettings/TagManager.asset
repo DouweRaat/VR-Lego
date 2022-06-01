@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Interactable
   - Anti-Stud
+  - LegoDeletable
   layers:
   - Default
   - TransparentFX

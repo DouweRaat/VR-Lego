@@ -442,6 +442,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 863936372}
     m_Modifications:
+    - target: {fileID: 7619179608781345718, guid: af1ed783118049c40a6b37b7594ea2fc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8267552338258981475, guid: af1ed783118049c40a6b37b7594ea2fc,
         type: 3}
       propertyPath: m_Name
@@ -956,8 +961,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabBrick:
   - {fileID: 3904805210553810285, guid: b48cb7b70f357b84aa893164b9e62bfc, type: 3}
+  - {fileID: 3904805210553810285, guid: b48cb7b70f357b84aa893164b9e62bfc, type: 3}
   - {fileID: 2694874861226689745, guid: c07c256a9494cc84dbcac548760fe1bd, type: 3}
   - {fileID: 6117835181415396516, guid: feab9851fb1a8584d97c4802e165e4ae, type: 3}
+  - {fileID: 5515887310106929739, guid: 9241db3caccf26a40aefd8a78d8a47aa, type: 3}
   TransparentMat: {fileID: 2100000, guid: cd79d759999a05f4bb92149c8e89422a, type: 2}
   BrickMat: {fileID: 2100000, guid: 127a0939df66d32418c6d37e5d3801ca, type: 2}
   materials:
@@ -970,7 +977,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 45dc442714e147345a76411186923807, type: 2}
   - {fileID: 2100000, guid: 69dddef88d9c9c34bb127897b95fd7f4, type: 2}
   - {fileID: 2100000, guid: 47d7f9d0d9290564eb9e169135c060ae, type: 2}
-  VRCamera: {fileID: 1768584628}
   controller: {fileID: 1828848943}
   actionSet:
     actionSetPath: /actions/default
@@ -993,6 +999,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 863936372}
     m_Modifications:
+    - target: {fileID: 7619179608781345718, guid: af1ed783118049c40a6b37b7594ea2fc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8267552338258981475, guid: af1ed783118049c40a6b37b7594ea2fc,
         type: 3}
       propertyPath: m_Name
@@ -1393,6 +1404,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 863936372}
     m_Modifications:
+    - target: {fileID: 7619179608781345718, guid: af1ed783118049c40a6b37b7594ea2fc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8267552338258981475, guid: af1ed783118049c40a6b37b7594ea2fc,
         type: 3}
       propertyPath: m_Name
@@ -1483,6 +1499,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 863936372}
     m_Modifications:
+    - target: {fileID: 7619179608781345718, guid: af1ed783118049c40a6b37b7594ea2fc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8267552338258981475, guid: af1ed783118049c40a6b37b7594ea2fc,
         type: 3}
       propertyPath: m_Name
@@ -1565,12 +1586,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8788756671553874137, guid: af1ed783118049c40a6b37b7594ea2fc,
     type: 3}
   m_PrefabInstance: {fileID: 1712075356}
-  m_PrefabAsset: {fileID: 0}
---- !u!20 &1768584628 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 2014920, guid: dc06161b6d97feb419f45f03b62e14b9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1913165217}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1828848943 stripped
 Transform:
