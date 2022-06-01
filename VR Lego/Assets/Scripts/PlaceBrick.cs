@@ -21,6 +21,8 @@ public class PlaceBrick : MonoBehaviour
     public SteamVR_Action_Boolean placeBrick;
     public SteamVR_Action_Boolean rotateBrick;
 
+    public bool colliding = false;
+
     void Start()
     {
         //SetNextBrick();
@@ -37,28 +39,8 @@ public class PlaceBrick : MonoBehaviour
         {
             if (Physics.Raycast(controller.transform.position, controller.transform.forward, out var hitinfo, float.MaxValue, LegoLogic.LayerMaksLego))
             {
-                //Gizmos.color = Color.red;
-                //Gizmos.DrawLine(controller.transform.position, hitinfo.point);
                 var position = LegoLogic.SnapToGrid(hitinfo.point);
-
-                //if (hitinfo.point.y >= hitinfo.collider.transform.position.y + hitinfo.collider.gameObject.GetComponent<BoxCollider>().size.y * hitinfo.collider.gameObject.transform.localScale.y / 2)
-                //{
-                //    //raakt bovenkant
-                //}
-                //else if (hitinfo.point.y <= hitinfo.collider.transform.position.y - hitinfo.collider.gameObject.GetComponent<BoxCollider>().size.y * hitinfo.collider.gameObject.transform.localScale.y / 2)
-                //{
-                //    //raakt onderkant
-                //    for (int i = 0; i < Mathf.Round(CurrentBrick.GetComponent<BoxCollider>().size.y / 8); i++)
-                //    {
-                //        position = new Vector3(position.x, position.y-LegoLogic.Grid.y, position.z);
-                //    }
-                //}
-                //else
-                //{
-                //    //raakt zijkant
-                //    position = LegoLogic.SnapToGrid(CurrentBrick.transform.position);
-                //}
-
+                
                 //if (Input.GetKeyDown(KeyCode.I))
                 //{
                 //    position.x += LegoLogic.Grid.x;
@@ -81,7 +63,7 @@ public class PlaceBrick : MonoBehaviour
                 //}
                 CurrentBrick.transform.position = position;
             }
-            if ((Input.GetKeyDown(KeyCode.Space) || placeBrick.GetStateDown(SteamVR_Input_Sources.Any)))
+            if ((Input.GetKeyDown(KeyCode.Space) || placeBrick.GetStateDown(SteamVR_Input_Sources.Any)) && colliding == false)
             {
                 Debug.Log("plaatsen werkt");
                 CurrentBrick.Collider.enabled = true;
@@ -93,6 +75,7 @@ public class PlaceBrick : MonoBehaviour
                 {
                     CurrentBrick.transform.GetChild(a).gameObject.SetActive(true);
                 }
+                CurrentBrick.GetComponent<Brick>().CurrentBrick = false;
                 CurrentBrick = null;
                 SetNextBrick();
                 CurrentBrick.transform.rotation = rot;
@@ -113,9 +96,6 @@ public class PlaceBrick : MonoBehaviour
         else {
             if (Physics.Raycast(controller.transform.position, controller.transform.forward, out var hitinfo, float.MaxValue, LegoLogic.LayerMaksLego))
             {
-                //Gizmos.color = Color.red;
-                //Gizmos.DrawLine(controller.transform.position, hitinfo.point);
-
                 if ((Input.GetKeyDown(KeyCode.Space) || placeBrick.GetStateDown(SteamVR_Input_Sources.Any)) && hitinfo.collider.gameObject.tag == "LegoDeletable")
                 {
                     GameObject.DestroyImmediate(hitinfo.collider.gameObject);
@@ -129,6 +109,7 @@ public class PlaceBrick : MonoBehaviour
         CurrentBrick = Instantiate(PrefabBrick[brick]);
         CurrentBrick.Collider.enabled = false;
         CurrentBrick.GetComponent<Renderer>().material = materials[color+1];
+        CurrentBrick.GetComponent<Brick>().CurrentBrick = true;
     }
 
     private void ChangeColor()

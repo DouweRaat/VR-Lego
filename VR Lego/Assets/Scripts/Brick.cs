@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class Brick : MonoBehaviour
 {
@@ -9,10 +10,15 @@ public class Brick : MonoBehaviour
     [HideInInspector]
     public LODGroup BrickMeshes;
 
+    public bool CurrentBrick = true;
+
+    public Player player;
+
     public void Awake()
     {
         Collider = GetComponent<BoxCollider>();
         BrickMeshes = GetComponent<LODGroup>();
+        player = GetComponent(typeof(Player)) as Player;
     }
 
     public void SetMaterial(Material mat)
@@ -26,4 +32,28 @@ public class Brick : MonoBehaviour
             }
         }
     }
+
+    //void OnCollisionEnter(Collision other)
+    //{
+    //    Debug.Log("collision enter");
+    //    player.GetComponent<PlaceBrick>().colliding = true;
+    //}
+
+    //void OnCollisionStay(Collision other)
+    //{
+    //    Debug.Log("collision stay");
+    //    if (CurrentBrick)
+    //    {
+    //        player.GetComponent<PlaceBrick>().colliding = true;
+    //    }
+    //}
+
+    //void OnCollisionExit(Collision other)
+    //{
+    //    Debug.Log("collision exit");
+    //    if (CurrentBrick)
+    //    {
+    //        player.GetComponent<PlaceBrick>().colliding = false;
+    //    }
+    //}
 }
