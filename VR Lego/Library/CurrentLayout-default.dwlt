@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1280
     height: 637.3334
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 118
+  controlID: 67
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 46
+  controlID: 23
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -535,10 +535,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ae0f0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 66fbffff
+      scrollPos: {x: 0, y: 60}
+      m_SelectedIDs: 4cfaffff
+      m_LastClickedID: -1460
+      m_ExpandedIDs: c4f2ffff1af3ffff78faffff66fbfffff0460000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -626,22 +626,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/SteamVR/Extras
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 50
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/SteamVR/Extras
   m_LastFoldersGridSize: 50
   m_LastProjectPath: C:\Users\Gebruiker\Desktop\School\Coderclass\Unity\Unity-VR\VR-Lego\VR
     Lego
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: 924c0000
-    m_LastClickedID: 19602
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 904c0000
+    m_LastClickedID: 19600
     m_ExpandedIDs: 00000000684c00006a4c00006c4c00006e4c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

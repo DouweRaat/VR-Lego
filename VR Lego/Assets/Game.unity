@@ -961,10 +961,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabBrick:
   - {fileID: 3904805210553810285, guid: b48cb7b70f357b84aa893164b9e62bfc, type: 3}
-  - {fileID: 3904805210553810285, guid: b48cb7b70f357b84aa893164b9e62bfc, type: 3}
-  - {fileID: 2694874861226689745, guid: c07c256a9494cc84dbcac548760fe1bd, type: 3}
-  - {fileID: 6117835181415396516, guid: feab9851fb1a8584d97c4802e165e4ae, type: 3}
-  - {fileID: 5515887310106929739, guid: 9241db3caccf26a40aefd8a78d8a47aa, type: 3}
+  - {fileID: 9139988753273633464, guid: 84d1268501f902d4d8d068f0808badf1, type: 3}
+  - {fileID: 7996666822420113395, guid: 366bd4ffb75d35d46b5d14c71ebf8ab3, type: 3}
+  - {fileID: 5862258012075446266, guid: 087c146660b9f2b459e44c44a9b4a7d7, type: 3}
+  - {fileID: 4388473351878219981, guid: 082a2d9060cd7904b97a0cda2e092b2e, type: 3}
   TransparentMat: {fileID: 2100000, guid: cd79d759999a05f4bb92149c8e89422a, type: 2}
   BrickMat: {fileID: 2100000, guid: 127a0939df66d32418c6d37e5d3801ca, type: 2}
   materials:
@@ -1785,3 +1785,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+--- !u!1 &1913165218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 160596, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1913165217}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1913165219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913165218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f511c1adaa1e94ebe7ca97bbcabd17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pose: {fileID: 0}
+  interactWithUI:
+    actionPath: /actions/default/in/InteractUI
+    needsReinit: 0
+  active: 1
+  color: {r: 0, g: 0, b: 0, a: 0}
+  thickness: 0.002
+  clickColor: {r: 0, g: 1, b: 0, a: 1}
+  holder: {fileID: 0}
+  pointer: {fileID: 0}
+  addRigidBody: 0
+  reference: {fileID: 0}

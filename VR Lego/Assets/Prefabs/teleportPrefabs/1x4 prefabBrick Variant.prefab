@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: 9163801899998143113, guid: feab9851fb1a8584d97c4802e165e4ae,
         type: 3}
       propertyPath: m_Name
-      value: 1x4 prefabBrick
+      value: 1x4 prefabBrick Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feab9851fb1a8584d97c4802e165e4ae, type: 3}
@@ -170,6 +170,11 @@ PrefabInstance:
     - target: {fileID: 9163801899998143113, guid: feab9851fb1a8584d97c4802e165e4ae,
         type: 3}
       propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163801899998143113, guid: feab9851fb1a8584d97c4802e165e4ae,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9163801899998143113, guid: feab9851fb1a8584d97c4802e165e4ae,

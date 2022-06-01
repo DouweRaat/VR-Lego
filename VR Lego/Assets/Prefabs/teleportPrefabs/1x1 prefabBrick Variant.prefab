@@ -99,6 +99,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3904805210553810291, guid: b48cb7b70f357b84aa893164b9e62bfc,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904805210553810291, guid: b48cb7b70f357b84aa893164b9e62bfc,
+        type: 3}
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
@@ -191,7 +196,7 @@ PrefabInstance:
     - target: {fileID: 3904805210553810291, guid: b48cb7b70f357b84aa893164b9e62bfc,
         type: 3}
       propertyPath: m_Name
-      value: 1x1 prefabBrick
+      value: 1x1 prefabBrick Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b48cb7b70f357b84aa893164b9e62bfc, type: 3}

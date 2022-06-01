@@ -37,8 +37,8 @@ public class PlaceBrick : MonoBehaviour
         {
             if (Physics.Raycast(controller.transform.position, controller.transform.forward, out var hitinfo, float.MaxValue, LegoLogic.LayerMaksLego))
             {
-                Gizmos.color = Color.red;
-                Gizmos.DrawLine(controller.transform.position, hitinfo.point);
+                //Gizmos.color = Color.red;
+                //Gizmos.DrawLine(controller.transform.position, hitinfo.point);
                 var position = LegoLogic.SnapToGrid(hitinfo.point);
 
                 //if (hitinfo.point.y >= hitinfo.collider.transform.position.y + hitinfo.collider.gameObject.GetComponent<BoxCollider>().size.y * hitinfo.collider.gameObject.transform.localScale.y / 2)
@@ -89,6 +89,10 @@ public class PlaceBrick : MonoBehaviour
 
                 var rot = CurrentBrick.transform.rotation;
                 var pos = CurrentBrick.transform.position;
+                for (int a = 0; a < CurrentBrick.transform.childCount; a++)
+                {
+                    CurrentBrick.transform.GetChild(a).gameObject.SetActive(true);
+                }
                 CurrentBrick = null;
                 SetNextBrick();
                 CurrentBrick.transform.rotation = rot;
@@ -109,8 +113,8 @@ public class PlaceBrick : MonoBehaviour
         else {
             if (Physics.Raycast(controller.transform.position, controller.transform.forward, out var hitinfo, float.MaxValue, LegoLogic.LayerMaksLego))
             {
-                Gizmos.color = Color.red;
-                Gizmos.DrawLine(controller.transform.position, hitinfo.point);
+                //Gizmos.color = Color.red;
+                //Gizmos.DrawLine(controller.transform.position, hitinfo.point);
 
                 if ((Input.GetKeyDown(KeyCode.Space) || placeBrick.GetStateDown(SteamVR_Input_Sources.Any)) && hitinfo.collider.gameObject.tag == "LegoDeletable")
                 {
