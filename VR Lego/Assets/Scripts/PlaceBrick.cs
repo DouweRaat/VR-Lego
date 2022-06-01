@@ -21,7 +21,7 @@ public class PlaceBrick : MonoBehaviour
     public SteamVR_Action_Boolean placeBrick;
     public SteamVR_Action_Boolean rotateBrick;
 
-    public bool colliding = false;
+    //public bool colliding = false;
 
     void Start()
     {
@@ -63,7 +63,7 @@ public class PlaceBrick : MonoBehaviour
                 //}
                 CurrentBrick.transform.position = position;
             }
-            if ((Input.GetKeyDown(KeyCode.Space) || placeBrick.GetStateDown(SteamVR_Input_Sources.Any)) && colliding == false)
+            if ((Input.GetKeyDown(KeyCode.Space) || placeBrick.GetStateDown(SteamVR_Input_Sources.Any)) && CurrentBrick.GetComponent<Brick>().IsNotColliding == true)
             {
                 Debug.Log("plaatsen werkt");
                 CurrentBrick.Collider.enabled = true;

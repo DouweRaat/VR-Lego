@@ -12,13 +12,19 @@ public class Brick : MonoBehaviour
 
     public bool CurrentBrick = true;
 
-    public Player player;
+    //public Player player;
+
+    private int collisionCount = 0;
+   
+    public bool IsNotColliding {
+        get { return collisionCount == 0; }
+    }
 
     public void Awake()
     {
         Collider = GetComponent<BoxCollider>();
         BrickMeshes = GetComponent<LODGroup>();
-        player = GetComponent(typeof(Player)) as Player;
+        //player = GetComponent(typeof(Player)) as Player;
     }
 
     public void SetMaterial(Material mat)
@@ -56,4 +62,14 @@ public class Brick : MonoBehaviour
     //        player.GetComponent<PlaceBrick>().colliding = false;
     //    }
     //}
+
+    void OnCollisionEnter(Collision col)
+    {
+        collisionCount++;
+    }
+
+    void OnCollisionExit(Collision col)
+    {
+        collisionCount--;
+    }
 }
