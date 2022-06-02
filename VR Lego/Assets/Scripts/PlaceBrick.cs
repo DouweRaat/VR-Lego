@@ -21,6 +21,8 @@ public class PlaceBrick : MonoBehaviour
     public SteamVR_Action_Boolean placeBrick;
     public SteamVR_Action_Boolean rotateBrick;
 
+    private bool PositionOk;
+
     //public bool colliding = false;
 
     void Start()
@@ -63,9 +65,14 @@ public class PlaceBrick : MonoBehaviour
                 //}
                 CurrentBrick.transform.position = position;
             }
-            if ((Input.GetKeyDown(KeyCode.Space) || placeBrick.GetStateDown(SteamVR_Input_Sources.Any)) && CurrentBrick.GetComponent<Brick>().IsNotColliding == true)
+
+            var collider = Physics.OverlapBox(CurrentBrick.transform.position + CurrentBrick.transform.rotation * CurrentBrick.Collider.center, CurrentBrick.Collider.size / 2, CurrentBrick.transform.rotation, LegoLogic.LayerMaksLego);
+            PositionOk = collider.Length == 0;
+
+            //if ((Input.GetKeyDown(KeyCode.Space) || placeBrick.GetStateDown(SteamVR_Input_Sources.Any)) && CurrentBrick.GetComponent<Brick>().IsNotColliding == true)
+            if ((Input.GetKeyDown(KeyCode.Space) || placeBrick.GetStateDown(SteamVR_Input_Sources.Any)) && PositionOk)
             {
-                Debug.Log("plaatsen werkt");
+                //Debug.Log(CurrentBrick.GetComponent<Brick>().IsNotColliding);
                 CurrentBrick.Collider.enabled = true;
                 CurrentBrick.GetComponent<Renderer>().material = materials[color];
 

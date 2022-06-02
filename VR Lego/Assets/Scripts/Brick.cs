@@ -63,13 +63,16 @@ public class Brick : MonoBehaviour
     //    }
     //}
 
-    void OnCollisionEnter(Collision col)
-    {
-        collisionCount++;
-    }
+    //void OnCollisionEnter(Collision col)
+    //{
+    //    collisionCount++;
+    //}
 
-    void OnCollisionExit(Collision col)
-    {
-        collisionCount--;
-    }
+    //void OnCollisionExit(Collision col)
+    //{
+    //    collisionCount--;
+    //    if (collisionCount < 0) {
+    //        collisionCount = 0;
+    //    }
+    //}
 }
