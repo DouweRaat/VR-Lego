@@ -64,7 +64,28 @@ public class PlaceBrick : MonoBehaviour
             if (Physics.Raycast(controller.transform.position, controller.transform.forward, out var hitinfo, float.MaxValue, LegoLogic.LayerMaksLego))
             {
                 var position = LegoLogic.SnapToGrid(hitinfo.point);
-                
+
+                if (hitinfo.point.y >= transform.TransformPoint(CurrentBrick.GetComponent<BoxCollider>().center).y + CurrentBrick.GetComponent<BoxCollider>().size.y / 2)
+                {
+                    //raakt bovenkant
+                    Debug.Log("Raakt bovenkant");
+                }
+                else if (hitinfo.point.y <= transform.TransformPoint(CurrentBrick.GetComponent<BoxCollider>().center).y - CurrentBrick.GetComponent<BoxCollider>().size.y / 2)
+                {
+                    //raakt onderkant
+                    Debug.Log("Raakt onderkant");
+                    //for (int i = 0; i < CurrentBrick.GetComponent<BoxCollider>().size.y / 8; i++)
+                    //{
+                    //    position = new Vector3(position.x, position.y - LegoLogic.Grid.y, position.y);
+                    //}
+                }
+                else
+                {
+                    //raakt zijkant
+                    Debug.Log("Raakt zijkant");
+                    //position = CurrentBrick.transform.position;
+                }
+
                 //if (Input.GetKeyDown(KeyCode.I))
                 //{
                 //    position.x += LegoLogic.Grid.x;
