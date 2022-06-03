@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
 
+[ExecuteInEditMode]
 public class Brick : MonoBehaviour
 {
     [HideInInspector]
     public BoxCollider Collider;
     [HideInInspector]
     public LODGroup BrickMeshes;
-
-    public bool CurrentBrick = true;
-
-    //public Player player;
 
     private int collisionCount = 0;
    
@@ -24,7 +21,6 @@ public class Brick : MonoBehaviour
     {
         Collider = GetComponent<BoxCollider>();
         BrickMeshes = GetComponent<LODGroup>();
-        //player = GetComponent(typeof(Player)) as Player;
     }
 
     public void SetMaterial(Material mat)
@@ -39,40 +35,29 @@ public class Brick : MonoBehaviour
         }
     }
 
-    //void OnCollisionEnter(Collision other)
-    //{
-    //    Debug.Log("collision enter");
-    //    player.GetComponent<PlaceBrick>().colliding = true;
-    //}
+    void OnCollisionEnter(Collision col)
+    {
+        collisionCount++;
+    }
 
-    //void OnCollisionStay(Collision other)
-    //{
-    //    Debug.Log("collision stay");
-    //    if (CurrentBrick)
-    //    {
-    //        player.GetComponent<PlaceBrick>().colliding = true;
-    //    }
-    //}
+    void OnCollisionExit(Collision col)
+    {
+        collisionCount--;
+        if (collisionCount < 0)
+        {
+            collisionCount = 0;
+        }
+    }
 
-    //void OnCollisionExit(Collision other)
-    //{
-    //    Debug.Log("collision exit");
-    //    if (CurrentBrick)
-    //    {
-    //        player.GetComponent<PlaceBrick>().colliding = false;
-    //    }
-    //}
+    public void NoRaycastLayer()
+    {
+        int layerIgnoreRaycast = LayerMask.NameToLayer("Ignore Raycast");
+        gameObject.layer = layerIgnoreRaycast;
+    }
 
-    //void OnCollisionEnter(Collision col)
-    //{
-    //    collisionCount++;
-    //}
-
-    //void OnCollisionExit(Collision col)
-    //{
-    //    collisionCount--;
-    //    if (collisionCount < 0) {
-    //        collisionCount = 0;
-    //    }
-    //}
+    public void LegoLayer()
+    {
+        int layerLego = LayerMask.NameToLayer("Lego");
+        gameObject.layer = layerLego;
+    }
 }

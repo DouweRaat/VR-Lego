@@ -864,8 +864,14 @@ MonoBehaviour:
   switchBrick:
     actionPath: /actions/default/in/SwitchPiece
     needsReinit: 0
+  prevBrick:
+    actionPath: /actions/default/in/PrevBrick
+    needsReinit: 0
   switchColor:
     actionPath: /actions/default/in/SwitchColor
+    needsReinit: 0
+  prevColor:
+    actionPath: /actions/default/in/PrevColor
     needsReinit: 0
   placeBrick:
     actionPath: /actions/default/in/PlaceBrick
@@ -873,7 +879,9 @@ MonoBehaviour:
   rotateBrick:
     actionPath: /actions/default/in/RotateBrick
     needsReinit: 0
-  colliding: 0
+  deleteMode:
+    actionPath: /actions/default/in/DeleteMode
+    needsReinit: 0
 --- !u!1001 &1183652319
 PrefabInstance:
   m_ObjectHideFlags: 0

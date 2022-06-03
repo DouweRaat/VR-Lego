@@ -47,6 +47,12 @@ namespace Valve.VR
         
         private static SteamVR_Action_Boolean p_default_RotateBrick;
         
+        private static SteamVR_Action_Boolean p_default_DeleteMode;
+        
+        private static SteamVR_Action_Boolean p_default_PrevColor;
+        
+        private static SteamVR_Action_Boolean p_default_PrevBrick;
+        
         private static SteamVR_Action_Vibration p_default_Haptic;
         
         private static SteamVR_Action_Vector2 p_platformer_Move;
@@ -183,6 +189,30 @@ namespace Valve.VR
             }
         }
         
+        public static SteamVR_Action_Boolean default_DeleteMode
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_DeleteMode.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean default_PrevColor
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_PrevColor.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
+        public static SteamVR_Action_Boolean default_PrevBrick
+        {
+            get
+            {
+                return SteamVR_Actions.p_default_PrevBrick.GetCopy<SteamVR_Action_Boolean>();
+            }
+        }
+        
         public static SteamVR_Action_Vibration default_Haptic
         {
             get
@@ -265,6 +295,9 @@ namespace Valve.VR
                     SteamVR_Actions.default_SwitchPiece,
                     SteamVR_Actions.default_PlaceBrick,
                     SteamVR_Actions.default_RotateBrick,
+                    SteamVR_Actions.default_DeleteMode,
+                    SteamVR_Actions.default_PrevColor,
+                    SteamVR_Actions.default_PrevBrick,
                     SteamVR_Actions.default_Haptic,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
@@ -289,6 +322,9 @@ namespace Valve.VR
                     SteamVR_Actions.default_SwitchPiece,
                     SteamVR_Actions.default_PlaceBrick,
                     SteamVR_Actions.default_RotateBrick,
+                    SteamVR_Actions.default_DeleteMode,
+                    SteamVR_Actions.default_PrevColor,
+                    SteamVR_Actions.default_PrevBrick,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Steering,
@@ -315,6 +351,9 @@ namespace Valve.VR
                     SteamVR_Actions.default_SwitchPiece,
                     SteamVR_Actions.default_PlaceBrick,
                     SteamVR_Actions.default_RotateBrick,
+                    SteamVR_Actions.default_DeleteMode,
+                    SteamVR_Actions.default_PrevColor,
+                    SteamVR_Actions.default_PrevBrick,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Brake,
                     SteamVR_Actions.buggy_Reset};
@@ -341,6 +380,9 @@ namespace Valve.VR
                     SteamVR_Actions.default_SwitchPiece,
                     SteamVR_Actions.default_PlaceBrick,
                     SteamVR_Actions.default_RotateBrick,
+                    SteamVR_Actions.default_DeleteMode,
+                    SteamVR_Actions.default_PrevColor,
+                    SteamVR_Actions.default_PrevBrick,
                     SteamVR_Actions.platformer_Move,
                     SteamVR_Actions.platformer_Jump,
                     SteamVR_Actions.buggy_Steering,
@@ -366,6 +408,9 @@ namespace Valve.VR
             SteamVR_Actions.p_default_SwitchPiece = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/SwitchPiece")));
             SteamVR_Actions.p_default_PlaceBrick = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/PlaceBrick")));
             SteamVR_Actions.p_default_RotateBrick = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/RotateBrick")));
+            SteamVR_Actions.p_default_DeleteMode = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/DeleteMode")));
+            SteamVR_Actions.p_default_PrevColor = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/PrevColor")));
+            SteamVR_Actions.p_default_PrevBrick = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/default/in/PrevBrick")));
             SteamVR_Actions.p_default_Haptic = ((SteamVR_Action_Vibration)(SteamVR_Action.Create<SteamVR_Action_Vibration>("/actions/default/out/Haptic")));
             SteamVR_Actions.p_platformer_Move = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/platformer/in/Move")));
             SteamVR_Actions.p_platformer_Jump = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/platformer/in/Jump")));

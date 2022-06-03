@@ -66,6 +66,18 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/DeleteMode",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/PrevColor",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/PrevBrick",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },

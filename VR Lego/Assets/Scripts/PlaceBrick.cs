@@ -12,18 +12,19 @@ public class PlaceBrick : MonoBehaviour
 
     protected Brick CurrentBrick;
     private int color = 1;
-    private int brick = 0;
+    private int brick = 1;
     public Transform controller;
 
     public SteamVR_ActionSet actionSet;
     public SteamVR_Action_Boolean switchBrick;
+    public SteamVR_Action_Boolean prevBrick;
     public SteamVR_Action_Boolean switchColor;
+    public SteamVR_Action_Boolean prevColor;
     public SteamVR_Action_Boolean placeBrick;
     public SteamVR_Action_Boolean rotateBrick;
+    public SteamVR_Action_Boolean deleteMode;
 
-    private bool PositionOk;
-
-    //public bool colliding = false;
+    private bool deleteModeActive = true;
 
     void Start()
     {
@@ -35,6 +36,27 @@ public class PlaceBrick : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.H) || switchBrick.GetStateDown(SteamVR_Input_Sources.Any))
         {
             ChangeBrick();
+        }
+
+        if (prevBrick.GetStateDown(SteamVR_Input_Sources.Any))
+        {
+            ChangeBrickPrev();
+        }
+
+        if (deleteMode.GetStateDown(SteamVR_Input_Sources.Any))
+        {
+            if (deleteModeActive == true)
+            {
+                deleteModeActive = false;
+                SetNextBrick();
+            }
+            else if (deleteModeActive == false)
+            {
+                deleteModeActive = true;
+                CurrentBrick.GetComponent<Renderer>().material = materials[0];
+                GameObject.DestroyImmediate(CurrentBrick.gameObject);
+                CurrentBrick = null;
+            }
         }
 
         if (CurrentBrick != null)
@@ -66,13 +88,8 @@ public class PlaceBrick : MonoBehaviour
                 CurrentBrick.transform.position = position;
             }
 
-            var collider = Physics.OverlapBox(CurrentBrick.transform.position + CurrentBrick.transform.rotation * CurrentBrick.Collider.center, CurrentBrick.Collider.size / 2, CurrentBrick.transform.rotation, LegoLogic.LayerMaksLego);
-            PositionOk = collider.Length == 0;
-
-            //if ((Input.GetKeyDown(KeyCode.Space) || placeBrick.GetStateDown(SteamVR_Input_Sources.Any)) && CurrentBrick.GetComponent<Brick>().IsNotColliding == true)
-            if ((Input.GetKeyDown(KeyCode.Space) || placeBrick.GetStateDown(SteamVR_Input_Sources.Any)) && PositionOk)
+            if ((Input.GetKeyDown(KeyCode.Space) || placeBrick.GetStateDown(SteamVR_Input_Sources.Any)) && CurrentBrick.GetComponent<Brick>().IsNotColliding == true)
             {
-                //Debug.Log(CurrentBrick.GetComponent<Brick>().IsNotColliding);
                 CurrentBrick.Collider.enabled = true;
                 CurrentBrick.GetComponent<Renderer>().material = materials[color];
 
@@ -82,7 +99,7 @@ public class PlaceBrick : MonoBehaviour
                 {
                     CurrentBrick.transform.GetChild(a).gameObject.SetActive(true);
                 }
-                CurrentBrick.GetComponent<Brick>().CurrentBrick = false;
+                CurrentBrick.GetComponent<Brick>().LegoLayer();
                 CurrentBrick = null;
                 SetNextBrick();
                 CurrentBrick.transform.rotation = rot;
@@ -92,6 +109,11 @@ public class PlaceBrick : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.G) || switchColor.GetStateDown(SteamVR_Input_Sources.Any))
             {
                 ChangeColor();
+            }
+
+            if (prevColor.GetStateDown(SteamVR_Input_Sources.Any))
+            {
+                ChangeColorPrev();
             }
 
             if (Input.GetKeyDown(KeyCode.P) || rotateBrick.GetStateDown(SteamVR_Input_Sources.Any))
@@ -114,9 +136,9 @@ public class PlaceBrick : MonoBehaviour
     public void SetNextBrick()
     {
         CurrentBrick = Instantiate(PrefabBrick[brick]);
-        CurrentBrick.Collider.enabled = false;
+        //CurrentBrick.Collider.enabled = false;
         CurrentBrick.GetComponent<Renderer>().material = materials[color+1];
-        CurrentBrick.GetComponent<Brick>().CurrentBrick = true;
+        CurrentBrick.GetComponent<Brick>().NoRaycastLayer();
     }
 
     private void ChangeColor()
@@ -135,7 +157,7 @@ public class PlaceBrick : MonoBehaviour
         brick += 1;
         if (brick > (PrefabBrick.Length - 1))
         {
-            brick = 0;
+            brick = 1;
         }
 
         if (CurrentBrick != null)
@@ -146,17 +168,50 @@ public class PlaceBrick : MonoBehaviour
             var pos = CurrentBrick.transform.position;
             GameObject.DestroyImmediate(CurrentBrick.gameObject);
             CurrentBrick = null;
-
-            if (brick != 0)
-            {
-                SetNextBrick();
-                CurrentBrick.transform.rotation = rot;
-                CurrentBrick.transform.position = pos;
-            }
+            SetNextBrick();
+            CurrentBrick.transform.rotation = rot;
+            CurrentBrick.transform.position = pos;
         }
-        else if (brick != 0)
+        else
         {
             SetNextBrick();
         }
+    }
+
+    private void ChangeBrickPrev()
+    {
+        brick -= 1;
+        if (brick < 1)
+        {
+            brick = PrefabBrick.Length - 1;
+        }
+
+        if (CurrentBrick != null)
+        {
+            CurrentBrick.GetComponent<Renderer>().material = materials[0];
+
+            var rot = CurrentBrick.transform.rotation;
+            var pos = CurrentBrick.transform.position;
+            GameObject.DestroyImmediate(CurrentBrick.gameObject);
+            CurrentBrick = null;
+            SetNextBrick();
+            CurrentBrick.transform.rotation = rot;
+            CurrentBrick.transform.position = pos;
+        }
+        else
+        {
+            SetNextBrick();
+        }
+    }
+
+    private void ChangeColorPrev()
+    {
+        color -= 2;
+        if (color < 1)
+        {
+            color = materials.Length - 2;
+        }
+        if (CurrentBrick != null)
+            CurrentBrick.GetComponent<Renderer>().material = materials[color + 1];
     }
 }

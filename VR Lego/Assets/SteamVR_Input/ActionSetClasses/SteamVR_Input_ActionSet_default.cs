@@ -137,6 +137,30 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean DeleteMode
+        {
+            get
+            {
+                return SteamVR_Actions.default_DeleteMode;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean PrevColor
+        {
+            get
+            {
+                return SteamVR_Actions.default_PrevColor;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean PrevBrick
+        {
+            get
+            {
+                return SteamVR_Actions.default_PrevBrick;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get
