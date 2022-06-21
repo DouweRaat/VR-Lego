@@ -11,11 +11,11 @@ public class Brick : MonoBehaviour
     [HideInInspector]
     public LODGroup BrickMeshes;
 
-    private int collisionCount = 0;
+    //private int collisionCount = 0;
    
-    public bool IsNotColliding {
-        get { return collisionCount == 0; }
-    }
+    //public bool IsNotColliding {
+    //    get { return collisionCount == 0; }
+    //}
 
     public void Awake()
     {
@@ -35,29 +35,29 @@ public class Brick : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision col)
-    {
-        collisionCount++;
-    }
+    //void OnCollisionEnter(Collision col)
+    //{
+    //    collisionCount++;
+    //}
 
-    void OnCollisionExit(Collision col)
-    {
-        collisionCount--;
-        if (collisionCount < 0)
-        {
-            collisionCount = 0;
-        }
-    }
+    //void OnCollisionExit(Collision col)
+    //{
+    //    collisionCount--;
+    //    if (collisionCount < 0)
+    //    {
+    //        collisionCount = 0;
+    //    }
+    //}
 
-    public void NoRaycastLayer()
-    {
-        int layerIgnoreRaycast = LayerMask.NameToLayer("Ignore Raycast");
-        gameObject.layer = layerIgnoreRaycast;
-    }
+    //public void NoRaycastLayer()
+    //{
+    //    int layerIgnoreRaycast = LayerMask.NameToLayer("Ignore Raycast");
+    //    gameObject.layer = layerIgnoreRaycast;
+    //}
 
-    public void LegoLayer()
-    {
-        int layerLego = LayerMask.NameToLayer("Lego");
-        gameObject.layer = layerLego;
-    }
+    //public void LegoLayer()
+    //{
+    //    int layerLego = LayerMask.NameToLayer("Lego");
+    //    gameObject.layer = layerLego;
+    //}
 }
