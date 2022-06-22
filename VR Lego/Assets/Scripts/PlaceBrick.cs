@@ -154,6 +154,7 @@ public class PlaceBrick : MonoBehaviour
     private void ChangeBrick()
     {
         brick += 1;
+        deleteModeActive = false;
         if (brick > (PrefabBrick.Length - 1))
         {
             brick = 1;
@@ -180,6 +181,7 @@ public class PlaceBrick : MonoBehaviour
     private void ChangeBrickPrev()
     {
         brick -= 1;
+        deleteModeActive = false;
         if (brick < 1)
         {
             brick = PrefabBrick.Length - 1;
